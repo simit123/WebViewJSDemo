@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>js</title>
+    <script>
+
+        <!--方式一-->
+        <!--demo.hello("js调用了android中的hello方法");-->
+         function callAndroid(){
+            <!--方式二:定义协议-->
+            document.location = "js://webview?arg1=111&arg2=222";
+            方式三：定义协议通过alert将协议传入android
+            <!--var result=prompt("js://demo?arg1=111&arg2=222");-->
+            <!--alert("demo " + result);-->
+         }
+
+    </script>
+</head>
+<body>
+<!--//点击按钮则调用callAndroid函数-->
+<button type="button" id="button1" onclick="callAndroid()">调用Android</button>
+</body>
+</html>
